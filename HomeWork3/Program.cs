@@ -7,6 +7,21 @@ namespace HomeWork3
     {
         static void Main(string[] args)
         {
+            Circle circle = new Circle();
+            circle.GetInfo();
+
+            Circle circle1 = new Circle(15);
+            circle.GetInfo();
+
+            Square square = new Square();
+            square.GetInfo();
+
+            Rectangle rectangle = new Rectangle();
+            rectangle.GetInfo();
+
+            Triangle triangle = new Triangle();
+            triangle.GetInfo();
+
             Console.WriteLine(Circle.GetPerimeter(56));
             Console.WriteLine(Circle.GetArea(56));
 

@@ -4,23 +4,43 @@ using System.Text;
 
 namespace ClassLibrary1
 {
-    public class Square
+    public class Square : Figure
     {
-        private int Side;
+        public int Side;
 
-        public Square(int side)
+        public Square(int Side)
         {
-            Side = side;
+
         }
 
-        public static double GetPerimeter(int side)
+        public Square()
         {
-            return 4 * side ;
+            Side = 15;
         }
 
-        public static double GetArea(int side)
+        public static double GetPerimeter(int Side)
         {
-            return side * side;
+            return 4 * Side;
+        }
+
+        public static double GetArea(int Side)
+        {
+            return Side * Side;
+        }
+
+        public override double GetFigurePerimeter()
+        {
+            return 4 * Side;
+        }
+
+        public override double GetFigureArea()
+        {
+            return Side * Side;
+        }
+
+        public void GetInfo()
+        {
+            Console.WriteLine($"Square; Side: {Side}");
         }
     }
 }
