@@ -13,7 +13,11 @@ namespace ClassLibrary1
 
         public Triangle(int firstSide, int secondSide, int thirdSide, int hight)
         {
-
+            this.firstSide = firstSide;
+            this.secondSide = secondSide;
+            this.thirdSide = thirdSide;
+            this.hight = hight;
+            Console.WriteLine($"Triangle; firstSide: { this.firstSide}, secondSide: { this.secondSide}, thirdSide: { this.thirdSide}, hight: { this.hight}");
         }
 
         public Triangle()

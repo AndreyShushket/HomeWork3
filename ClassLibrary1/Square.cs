@@ -10,7 +10,8 @@ namespace ClassLibrary1
 
         public Square(int Side)
         {
-
+            this.Side = Side;
+            Console.WriteLine($"Square; Side: { this.Side}");
         }
 
         public Square()

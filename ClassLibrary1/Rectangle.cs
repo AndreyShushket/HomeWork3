@@ -11,7 +11,9 @@ namespace ClassLibrary1
 
         public Rectangle(int firstSide, int secondSide)
         {
-
+            this.firstSide = firstSide;
+            this.secondSide = secondSide;
+            Console.WriteLine($"Rectangle; firstSide: { this.firstSide}, secondSide: {this.secondSide}");
         }
 
         public Rectangle()

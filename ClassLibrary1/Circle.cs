@@ -8,7 +8,8 @@ namespace ClassLibrary1
 
         public Circle(int Radius)
         {
-
+            this.Radius = Radius;
+            Console.WriteLine($"Circle; Radius: { this.Radius}");
         }
 
         public Circle()
